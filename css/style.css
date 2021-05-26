@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Global ----------------------------------------------- */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    color: #2E2E2E;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+/* Surlignage des liens */
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.picto-button {
+    margin-right: 0.4rem;
+}
+
+
+
+/* Menu ----------------------------------------------- */
+header {
+    background: #DD5555;
+    height: 4rem;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+nav,
+ul,
+li {
+    height: 100%;
+}
+
+nav a {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 14px;
+}
+
+nav a:link,
+nav a:visited {
+    color:#FFFFFF;
+}
+/* Surlignage */
+nav a:hover {
+    background:#A64040;
+    transition-duration: 0.4s;
+}
+
+ul {
+    padding-left:0;
+    display: flex;
+}
+
+li {
+    list-style: none;       /* Pour enlever les puces de texte */
+}
+
+
+
+/* Hero ----------------------------------------------- */
+#hero {
+    background: url(../img/about.jpg.png) center/cover no-repeat;
+    color:#FFFFFF;
+    
+}
+
+#hero > div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+#hero h1 {
+    text-align: center;
+    
+}
+
+#hero h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#hero hr {
+    margin: 1rem 0;
+    border-top: 1px solid #FFFFFF;
+}
+
+#hero #action-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+#action-button a {
+    background: #FFFFFF;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.125rem;
+    
+}
+
+/* Survol */
+#action-button a:hover {
+    box-shadow: 0 0 10px 0 #FFFFFF;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+
+
+/* Seconde Section ----------------------------------------------- */
+#seconde-section {
+    padding: 3rem 0;
+}
+
+/* Titres */
+#seconde-section h2 {
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#seconde-section h4 {
+    font-size: 1.75rem;
+    margin: 1rem 0 0.5rem 0;
+
+}
+
+/* Galerie des trucs */
+#trucs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.truc {
+    width: calc(100% / 3 - 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+}
+
+#trucs .picto {
+    background: #DD5555;
+    border-radius: 4rem;
+    border: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Team Picture ----------------------------------------------- */
+#team-picture {
+    background: url(../img/team.jpg.png) top center / cover no-repeat;
+    padding: 5rem 0;
+}
+
+
+
+/* Team ----------------------------------------------- */
+#team-presentation {
+    padding: 5rem 0;
+}
+
+#team-presentation > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teammate {
+  
+    text-align: center;
+}
+
+.teammate .profile-picture {
+    border-radius: 30rem;
+    max-width: 30rem;
+}
+
+.teammate h4 {
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+.teammate a {
+    background: #DD5555;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+}
+
+/* Survol */
+.teammate a:hover {
+    box-shadow: 0 0 10px 0 #DD5555;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+
+
+/* Formulaire de contact ----------------------------------------------- */
+#contact-form {
+    background: #DD5555;
+    padding: 3rem 0;
+    color: #FFFFFF;
+}
+
+#contact-form form {
+    width: 80%;
+    margin: auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border:0;
+    margin-top: 0.2rem;
+}
+
+#contact-form .row {
+    display: flex;
+}
+
+#contact-form .col {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin: 1rem;
+}
+
+/* Submit button */
+#row-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+#contact-form button {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.125rem;
+}
+
+/* Survol */
+#contact-form button:hover {
+    box-shadow: 0 0 10px 0 #FFFFFF;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
