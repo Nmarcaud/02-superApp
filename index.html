@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 
+        <link rel="stylesheet" href="css/reset.css">
+
         <!-- Mon style -->
         <link rel="stylesheet" href="css/style.css">
 
@@ -18,31 +20,30 @@
     <body>
 
         <!-- Menu Navigation -->
-        <header>
+        <header class="site-header">
             <div class="container">
-                <nav>
-                    <ul>
-                        <li><a href="#"><img src="img/Logo.png"></a></li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">L'équipe</a></li>
-                        <li><a href="#">Contact</a></li>
+                <nav class="main-menu">
+                    <ul class="menu" role="list">
+                        <li><a href="#" class="menu-item"><img src="img/Logo.png"></a></li>
+                        <li><a href="#hero" class="menu-item">A propos</a></li>
+                        <li><a href="#seconde-section" class="menu-item">Services</a></li>
+                        <li><a href="#team-presentation" class="menu-item">L'équipe</a></li>
+                        <li><a href="#contact-form" class="menu-item">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
 
-
         <!-- Main -->
         <main>
 
             <!-- Hero -->
-            <div id="hero">
+            <section id="hero">
                 <div class="container">
 
-                    <h1>SUPER APP</h1>
-                    <h4>L'application trop super</h4>
+                    <h1>Super App</h1>
+                    <p class="baseline">L'application trop super&nbsp;!</p>
 
                     <hr>
 
@@ -53,43 +54,33 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
 
             <!-- Elle fait des trucs -->
-            <div id=seconde-section>
+            <sction id=seconde-section>
                 <div class="container">
                     
-                    <h2>ELLE FAIT DES TRUCS SUPERS</h2>
+                    <h2>Elle fait des trucs super&nbsp;!</h2>
 
                     <div id="trucs">
 
                         <div class="truc">
                             
                             <div class="picto">
-                                <img src="img/fork-and-knife-silhouette.svg">
+                                <img src="img/fork-and-knife-silhouette.svg" alt="Des couverts">
                             </div>
-                            <h4>Mettre la table</h4>
+                            <h3>Mettre la table</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
 
                         </div>
-                        
+                       
                         <div class="truc">
                             
                             <div class="picto">
-                                <img src="img/bed.svg">
+                                <img src="img/bed.svg" alt="Un lit">
                             </div>
-                            <h4>Faire le lit</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
-
-                        </div>
-
-                        <div class="truc">
-                            
-                            <div class="picto">
-                                <img src="img/fire-symbol.svg">
-                            </div>
-                            <h4>Allumer le feu</h4>
+                            <h3>Faire le lit</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
 
                         </div>
@@ -97,9 +88,9 @@
                         <div class="truc">
                             
                             <div class="picto">
-                                <img src="img/plant-leaf-with-white-details.svg">
+                                <img src="img/fire-symbol.svg" alt="Un feu">
                             </div>
-                            <h4>Ramasser les feuilles</h4>
+                            <h3>Allumer le feu</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
 
                         </div>
@@ -107,9 +98,9 @@
                         <div class="truc">
                             
                             <div class="picto">
-                                <img src="img/umbrella-black-silhouette.svg">
+                                <img src="img/plant-leaf-with-white-details.svg" alt="Une feuille">
                             </div>
-                            <h4>Protéger de la pluie</h4>
+                            <h3>Ramasser les feuilles</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
 
                         </div>
@@ -117,9 +108,19 @@
                         <div class="truc">
                             
                             <div class="picto">
-                                <img src="img/dollar-symbol.svg">
+                                <img src="img/umbrella-black-silhouette.svg" alt="Un parapluie">
                             </div>
-                            <h4>Vider votre compte</h4>
+                            <h3>Protéger de la pluie</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
+
+                        </div>
+
+                        <div class="truc">
+                            
+                            <div class="picto">
+                                <img src="img/dollar-symbol.svg" alt="Un symbole dollar">
+                            </div>
+                            <h3>Vider votre compte</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
 
                         </div>
@@ -127,72 +128,72 @@
 
                     </div>
                 </div>
-            </div>
+            </section>
 
 
             <!-- Une super photo d'équipe lors de notre dernier voyage sur Andore ! -->
-            <div id="team-picture">
+            <section id="team-picture">
                 <div class="container">
-                    <h1>La super équipe à l’origine de SuperApp</h1>
+                    <h2>La super équipe à l’origine de SuperApp</h2>
                 </div>
-            </div>
+            </section>
 
 
             <!-- Présentation de l'équipe -->
-            <div id="team-presentation">
+            <dsection id="team-presentation">
                 <div class="container">
                     
                     <div class="teammate">
-                        <img src="img/avaone.jpg.png" class="profile-picture">
-                        <h4>Tex Talign</h4>
+                        <img src="img/avaone.jpg_resultat.webp" srcset="img/avaone.jpg@2x_resultat.webp 2x" class="profile-picture" alt="Un potrait de Tex Talign">
+                        <p>Tex Talign</p>
                         <a><img src="img/envelope.svg" class="picto-button">Lui écrire</a>
                     </div>
 
                     <div class="teammate">
-                        <img src="img/avatwo.jpg.png" class="profile-picture">
-                        <h4>Marge Inn</h4>
+                        <img src="img/avatwo.jpg_resultat.webp" class="profile-picture" alt="">
+                        <p>Marge Inn</p>
                         <a><img src="img/envelope.svg" class="picto-button">Lui écrire</a>
                     </div>
 
                     <div class="teammate">
-                        <img src="img/avathree.jpg.png" class="profile-picture">
-                        <h4>Isaac Newton</h4>
+                        <img src="img/avathree.jpg_resultat.webp" class="profile-picture" alt="">
+                        <p>Isaac Newton</p>
                         <a><img src="img/envelope.svg" class="picto-button">Lui écrire</a>
                     </div>
 
                     <div class="teammate">
-                        <img src="img/avafour.jpg.png" class="profile-picture">
-                        <h4>Ash Tehemel</h4>
+                        <img src="img/avafour.jpg_resultat.webp" class="profile-picture" alt="">
+                        <p>Ash Tehemel</p>
                         <a><img src="img/envelope.svg" class="picto-button">Lui écrire</a>
                     </div>
 
 
                 </div>
-            </div>
+            </section>
 
 
             <!-- Contact form -->
 
-            <div id="contact-form">
+            <section id="contact-form">
                 <div class="container">
 
-                    <h1>ENVOYEZ-NOUS UN MESSAGE</h1>
+                    <h2>ENVOYEZ-NOUS UN MESSAGE</h2>
 
                     <form>
                         <div class="row">
                             <div class="col">
-                                <label>Votre nom</label>
-                                <input type="text" name="name">
+                                <label for="name">Votre nom</label>
+                                <input id="name" type="text" name="name" placeholder="Votre nom" required>
                             </div>
                             <div class="col">
-                                <label>Votre e-mail</label>
-                                <input type="mail" name="mail">
+                                <label for="email">Votre e-mail</label>
+                                <input id="email" type="email" name="email" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label>Votre message</label>
-                                <textarea rows="6"></textarea>
+                                <label for="message">Votre message</label>
+                                <textarea id="message" rows="6"></textarea>
                             </div>
                         </div>
 
@@ -204,7 +205,7 @@
 
 
                 </div>
-            </div>
+            </section>
 
 
         </main>
